@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\21127719_ETL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{445A3F56-7A67-C3C1-5657-914ADEB76FEA}|21127719_ETL\\21127719_ETL.dtproj|C:\\Users\\Admin\\source\\repos\\21127719_ETL\\21127719_ETL\\StageToNDS.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{445A3F56-7A67-C3C1-5657-914ADEB76FEA}|21127719_ETL\\21127719_ETL.dtproj|solutionrelative:21127719_ETL\\StageToNDS.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{445A3F56-7A67-C3C1-5657-914ADEB76FEA}|21127719_ETL\\21127719_ETL.dtproj|C:\\Users\\Admin\\source\\repos\\21127719_ETL\\21127719_ETL\\SourceToStage.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{445A3F56-7A67-C3C1-5657-914ADEB76FEA}|21127719_ETL\\21127719_ETL.dtproj|solutionrelative:21127719_ETL\\SourceToStage.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{445A3F56-7A67-C3C1-5657-914ADEB76FEA}|21127719_ETL\\21127719_ETL.dtproj|C:\\Users\\Admin\\source\\repos\\21127719_ETL\\21127719_ETL\\NDSToDDS.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{445A3F56-7A67-C3C1-5657-914ADEB76FEA}|21127719_ETL\\21127719_ETL.dtproj|solutionrelative:21127719_ETL\\NDSToDDS.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 430,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NDSToDDS.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\21127719_ETL\\21127719_ETL\\NDSToDDS.dtsx",
+              "RelativeDocumentMoniker": "21127719_ETL\\NDSToDDS.dtsx",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\21127719_ETL\\21127719_ETL\\NDSToDDS.dtsx [Design]",
+              "RelativeToolTip": "21127719_ETL\\NDSToDDS.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-11-02T10:00:42.542Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SourceToStage.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\21127719_ETL\\21127719_ETL\\SourceToStage.dtsx",
+              "RelativeDocumentMoniker": "21127719_ETL\\SourceToStage.dtsx",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\21127719_ETL\\21127719_ETL\\SourceToStage.dtsx [Design]",
+              "RelativeToolTip": "21127719_ETL\\SourceToStage.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-11-02T04:09:36.115Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StageToNDS.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\21127719_ETL\\21127719_ETL\\StageToNDS.dtsx",
+              "RelativeDocumentMoniker": "21127719_ETL\\StageToNDS.dtsx",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\21127719_ETL\\21127719_ETL\\StageToNDS.dtsx [Design]",
+              "RelativeToolTip": "21127719_ETL\\StageToNDS.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-10-27T15:54:33.238Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 123,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
