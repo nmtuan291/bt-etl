@@ -7,12 +7,12 @@
   DTS:CreatorName="MSI\Admin"
   DTS:DTSID="{331E42E1-23F8-4CC7-B5AC-0A45556E34D7}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="17.0.1008.3"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="1066"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="141"
-  DTS:VersionGUID="{DF59D261-3BCD-4584-BE79-087D742953D5}">
+  DTS:VersionBuild="146"
+  DTS:VersionGUID="{4C31AA10-B83C-44CC-A800-C5EF0E6819B3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -106,7 +106,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -341,7 +341,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -1120,11 +1120,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Stage to DangKyTour_NDS\Find MaKH_NK"
+              refId="Package\Stage to DangKyTour_NDS\Find MaKH_SK"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
               description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Find MaKH_NK"
+              name="Find MaKH_SK"
               usesDispositions="true"
               version="6">
               <properties>
@@ -1133,13 +1133,13 @@
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[KhachHang_NDS]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[KhachHang_NDS]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[KhachHang_NDS]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[KhachHang_NDS]) [refTable]
 where [refTable].[MaKH_NK] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1188,7 +1188,7 @@ where [refTable].[MaKH_NK] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Connections[OleDbConnection]"
+                  refId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[MSI.tour_nds]"
                   connectionManagerRefId="Package.ConnectionManagers[MSI.tour_nds]"
                   description="Connection manager used to access lookup data."
@@ -1196,11 +1196,11 @@ where [refTable].[MaKH_NK] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Inputs[Lookup Input]"
+                  refId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Inputs[Lookup Input]"
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Inputs[Lookup Input].Columns[Copy of MaKH]"
+                      refId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Inputs[Lookup Input].Columns[Copy of MaKH]"
                       cachedDataType="wstr"
                       cachedLength="5"
                       cachedName="Copy of MaKH"
@@ -1222,18 +1222,18 @@ where [refTable].[MaKH_NK] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Outputs[Lookup Match Output]"
+                  refId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
-                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Outputs[Lookup Match Output].Columns[MAKH_SK]"
+                      refId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup Match Output].Columns[MAKH_SK]"
                       dataType="i4"
                       errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Outputs[Lookup Match Output].Columns[MAKH_SK]"
+                      lineageId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup Match Output].Columns[MAKH_SK]"
                       name="MAKH_SK"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1247,30 +1247,30 @@ where [refTable].[MaKH_NK] = ?</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Outputs[Lookup No Match Output]"
+                  refId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup No Match Output]"
                   description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                   exclusionGroup="1"
                   name="Lookup No Match Output"
-                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Inputs[Lookup Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Outputs[Lookup Error Output]"
+                  refId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Lookup Error Output"
-                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      refId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      refId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1279,11 +1279,11 @@ where [refTable].[MaKH_NK] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Stage to DangKyTour_NDS\Find MaTour_NK"
+              refId="Package\Stage to DangKyTour_NDS\Find MaTour_SK"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
               description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Find MaTour_NK"
+              name="Find MaTour_SK"
               usesDispositions="true"
               version="6">
               <properties>
@@ -1292,13 +1292,13 @@ where [refTable].[MaKH_NK] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[Tour_NDS]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Tour_NDS]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[Tour_NDS]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Tour_NDS]) [refTable]
 where [refTable].[MaTour_NK] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1335,7 +1335,7 @@ where [refTable].[MaTour_NK] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Stage to DangKyTour_NDS\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MaTour]};</property>
+                  name="ParameterMap">#{Package\Stage to DangKyTour_NDS\Merge.Outputs[Merge Output 1].Columns[Copy of MaTour]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1347,7 +1347,7 @@ where [refTable].[MaTour_NK] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Connections[OleDbConnection]"
+                  refId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[MSI.tour_nds]"
                   connectionManagerRefId="Package.ConnectionManagers[MSI.tour_nds]"
                   description="Connection manager used to access lookup data."
@@ -1355,11 +1355,11 @@ where [refTable].[MaTour_NK] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Inputs[Lookup Input]"
+                  refId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Inputs[Lookup Input]"
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Inputs[Lookup Input].Columns[Copy of MaTour]"
+                      refId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Inputs[Lookup Input].Columns[Copy of MaTour]"
                       cachedDataType="wstr"
                       cachedLength="5"
                       cachedName="Copy of MaTour"
@@ -1381,18 +1381,18 @@ where [refTable].[MaTour_NK] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup Match Output]"
+                  refId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
-                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup Match Output].Columns[MaTour_SK_L]"
+                      refId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup Match Output].Columns[MaTour_SK_L]"
                       dataType="i4"
                       errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup Match Output].Columns[MaTour_SK_L]"
+                      lineageId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup Match Output].Columns[MaTour_SK_L]"
                       name="MaTour_SK_L"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1406,30 +1406,30 @@ where [refTable].[MaTour_NK] = ?</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup No Match Output]"
+                  refId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup No Match Output]"
                   description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                   exclusionGroup="1"
                   name="Lookup No Match Output"
-                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Inputs[Lookup Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup Error Output]"
+                  refId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Lookup Error Output"
-                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      refId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      refId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1451,13 +1451,13 @@ where [refTable].[MaTour_NK] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[DangKyTour_NDS]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DangKyTour_NDS]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[DangKyTour_NDS]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DangKyTour_NDS]) [refTable]
 where [refTable].[MaKH_NK] = ? and [refTable].[MaDK_NK] = ? and [refTable].[MaTour_NK] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -2039,19 +2039,10 @@ where [refTable].[MaKH_NK] = ? and [refTable].[MaDK_NK] = ? and [refTable].[MaTo
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">INSERT INTO DangKyTour_NDS (
-    MaKH_SK,
-    MaTour_SK,
-    MaDK_NK,
-    MaKH_NK,
-    MaTour_NK,
-    SoLuong,
-    NgayDangKy,
-    source_id,
-    created_at,
-    updated_at
-)
-VALUES (?, ?, ?, ?, ?, ?, ?, ?, GETDATE(), GETDATE())
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">INSERT INTO DangKyTour_NDS
+    (MaKH_SK, MaTour_SK, MaDK_NK, MaKH_NK, MaTour_NK, SoLuong, NgayDangKy, source_id, created_at, updated_at)
+VALUES
+    (?, ?, ?, ?, ?, ?, ?, ?, GETDATE(), GETDATE());
 </property>
                 <property
                   dataType="System.Int32"
@@ -2075,36 +2066,17 @@ VALUES (?, ?, ?, ?, ?, ?, ?, ?, GETDATE(), GETDATE())
                   name="OLE DB Command Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].Columns[MAKH_SK_L]"
+                      refId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].Columns[MAKH_SK]"
                       cachedDataType="i4"
-                      cachedName="MAKH_SK_L"
+                      cachedName="MAKH_SK"
                       externalMetadataColumnId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                      lineageId="Package\Stage to DangKyTour_NDS\166:invalid" />
+                      lineageId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup Match Output].Columns[MAKH_SK]" />
                     <inputColumn
                       refId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].Columns[MaTour_SK_L]"
                       cachedDataType="i4"
                       cachedName="MaTour_SK_L"
                       externalMetadataColumnId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                      lineageId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup Match Output].Columns[MaTour_SK_L]" />
-                    <inputColumn
-                      refId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].Columns[SoLuong]"
-                      cachedDataType="i4"
-                      cachedName="SoLuong"
-                      externalMetadataColumnId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
-                      lineageId="Package\Stage to DangKyTour_NDS\Merge.Outputs[Merge Output 1].Columns[SoLuong]" />
-                    <inputColumn
-                      refId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].Columns[NgayDangKy]"
-                      cachedDataType="dbDate"
-                      cachedName="NgayDangKy"
-                      externalMetadataColumnId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
-                      lineageId="Package\Stage to DangKyTour_NDS\Merge.Outputs[Merge Output 1].Columns[NgayDangKy]" />
-                    <inputColumn
-                      refId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].Columns[source_id]"
-                      cachedDataType="wstr"
-                      cachedLength="1"
-                      cachedName="source_id"
-                      externalMetadataColumnId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
-                      lineageId="Package\Stage to DangKyTour_NDS\Merge.Outputs[Merge Output 1].Columns[source_id]" />
+                      lineageId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup Match Output].Columns[MaTour_SK_L]" />
                     <inputColumn
                       refId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].Columns[Copy of MaDK]"
                       cachedDataType="wstr"
@@ -2126,6 +2098,25 @@ VALUES (?, ?, ?, ?, ?, ?, ?, ?, GETDATE(), GETDATE())
                       cachedName="Copy of MaTour"
                       externalMetadataColumnId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
                       lineageId="Package\Stage to DangKyTour_NDS\Merge.Outputs[Merge Output 1].Columns[Copy of MaTour]" />
+                    <inputColumn
+                      refId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].Columns[SoLuong]"
+                      cachedDataType="i4"
+                      cachedName="SoLuong"
+                      externalMetadataColumnId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      lineageId="Package\Stage to DangKyTour_NDS\Merge.Outputs[Merge Output 1].Columns[SoLuong]" />
+                    <inputColumn
+                      refId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].Columns[NgayDangKy]"
+                      cachedDataType="dbDate"
+                      cachedName="NgayDangKy"
+                      externalMetadataColumnId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                      lineageId="Package\Stage to DangKyTour_NDS\Merge.Outputs[Merge Output 1].Columns[NgayDangKy]" />
+                    <inputColumn
+                      refId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].Columns[source_id]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="source_id"
+                      externalMetadataColumnId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                      lineageId="Package\Stage to DangKyTour_NDS\Merge.Outputs[Merge Output 1].Columns[source_id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2274,7 +2265,7 @@ VALUES (?, ?, ?, ?, ?, ?, ?, ?, GETDATE(), GETDATE())
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE DangKyTour_NDS
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE DangKyTour_NDS
 SET
     SoLuong = ?,
     NgayDangKy = ?,
@@ -3231,22 +3222,22 @@ WHERE
               startId="Package\Stage to DangKyTour_NDS\Derived Column 1.Outputs[Derived Column Output]" />
             <path
               refId="Package\Stage to DangKyTour_NDS.Paths[Lookup Match Output]"
-              endId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Inputs[Lookup Input]"
+              endId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Outputs[Lookup Match Output]" />
+              startId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Stage to DangKyTour_NDS.Paths[Lookup Match Output1]"
-              endId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input]"
-              name="Lookup Match Output"
-              startId="Package\Stage to DangKyTour_NDS\Find MaTour_NK.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Stage to DangKyTour_NDS.Paths[Lookup Match Output2]"
               endId="Package\Stage to DangKyTour_NDS\OLE DB Command 1.Inputs[OLE DB Command Input]"
               name="Lookup Match Output"
               startId="Package\Stage to DangKyTour_NDS\Lookup.Outputs[Lookup Match Output]" />
             <path
+              refId="Package\Stage to DangKyTour_NDS.Paths[Lookup Match Output2]"
+              endId="Package\Stage to DangKyTour_NDS\OLE DB Command.Inputs[OLE DB Command Input]"
+              name="Lookup Match Output"
+              startId="Package\Stage to DangKyTour_NDS\Find MaTour_SK.Outputs[Lookup Match Output]" />
+            <path
               refId="Package\Stage to DangKyTour_NDS.Paths[Lookup No Match Output]"
-              endId="Package\Stage to DangKyTour_NDS\Find MaKH_NK.Inputs[Lookup Input]"
+              endId="Package\Stage to DangKyTour_NDS\Find MaKH_SK.Inputs[Lookup Input]"
               name="Lookup No Match Output"
               startId="Package\Stage to DangKyTour_NDS\Lookup.Outputs[Lookup No Match Output]" />
             <path
@@ -3738,7 +3729,7 @@ WHERE
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">
 INSERT INTO KhachHang_NDS (
     MaKH_NK,
     HoTen,
@@ -3926,7 +3917,7 @@ INSERT INTO KhachHang_NDS (
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -4116,7 +4107,7 @@ INSERT INTO KhachHang_NDS (
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -4313,13 +4304,13 @@ INSERT INTO KhachHang_NDS (
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[KhachHang_NDS]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[KhachHang_NDS]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[KhachHang_NDS]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[KhachHang_NDS]) [refTable]
 where [refTable].[MaKH_NK] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -5328,7 +5319,7 @@ where [refTable].[MaKH_NK] = ?</property>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">
 UPDATE KhachHang_NDS
 SET
     HoTen = ?,
@@ -6232,7 +6223,7 @@ WHERE MAKH_NK = ? AND source_id = ?;</property>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">INSERT INTO Tour_NDS (
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">INSERT INTO Tour_NDS (
     MaTour_NK,
     TenTour,
     Gia,
@@ -6410,13 +6401,13 @@ VALUES (?, ?, ?, ?, ?, GETDATE(), GETDATE());
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[Tour_NDS]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Tour_NDS]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[Tour_NDS]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Tour_NDS]) [refTable]
 where [refTable].[MaTour_NK] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -6800,7 +6791,7 @@ where [refTable].[MaTour_NK] = ?</property>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">INSERT INTO data_quality 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">INSERT INTO data_quality 
     (row_id, source_table, source_id, destination, reason, data_status, created_at, updated_at)
 VALUES 
     (?, 'Tour_A', 'A', 'Tour_NDS', 'Failed when parsing price', 'REJECTED', GETDATE(), GETDATE());</property>
@@ -8279,7 +8270,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -8459,7 +8450,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -8663,7 +8654,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE Tour_NDS
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE Tour_NDS
 SET
     TenTour = ?,
     Gia = ?,
@@ -9027,7 +9018,7 @@ WHERE
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="155,42"
-          Id="Package\Stage to DangKyTour_NDS\Find MaKH_NK"
+          Id="Package\Stage to DangKyTour_NDS\Find MaKH_SK"
           TopLeft="650,775" />
         <NodeLayout
           Size="108,42"
@@ -9038,12 +9029,8 @@ WHERE
           Id="Package\Stage to DangKyTour_NDS\Lookup"
           TopLeft="784,684" />
         <NodeLayout
-          Size="173,42"
-          Id="Package\Stage to DangKyTour_NDS\OLE DB Command"
-          TopLeft="643,969" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Stage to DangKyTour_NDS\Find MaTour_NK"
+          Size="162,42"
+          Id="Package\Stage to DangKyTour_NDS\Find MaTour_SK"
           TopLeft="641,872" />
         <NodeLayout
           Size="182,42"
@@ -9252,7 +9239,7 @@ WHERE
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Stage to DangKyTour_NDS.Paths[Lookup Match Output2]"
+          Id="Package\Stage to DangKyTour_NDS.Paths[Lookup Match Output1]"
           TopLeft="859.333333333333,726">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -9288,32 +9275,8 @@ WHERE
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Stage to DangKyTour_NDS.Paths[Lookup Match Output1]"
-          TopLeft="726,914">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55"
-              Start="0,0"
-              End="0,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-57.0600390625,15.75,114.120078125,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Stage to DangKyTour_NDS.Paths[Lookup Match Output]"
-          TopLeft="725,817">
+          TopLeft="724.75,817">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9423,16 +9386,44 @@ WHERE
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Stage to DangKyTour_NDS\OLE DB Command"
+          TopLeft="636,986" />
+        <EdgeLayout
+          Id="Package\Stage to DangKyTour_NDS.Paths[Lookup Match Output2]"
+          TopLeft="722.25,914">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72"
+              Start="0,0"
+              End="0,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,26.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Stage to DangKyTour_NDS\Find MaKH_NK">
+    design-time-name="Package\Stage to DangKyTour_NDS\Find MaKH_SK">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -9473,7 +9464,7 @@ WHERE
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Stage to DangKyTour_NDS\Find MaTour_NK">
+    design-time-name="Package\Stage to DangKyTour_NDS\Find MaTour_SK">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
